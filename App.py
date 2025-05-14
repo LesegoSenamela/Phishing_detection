@@ -94,17 +94,18 @@ st.write("")
 st.write("")
 
 # text box
-user_text = st.text_area("Please Enter your Email Text here", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Type Something...", disabled=False, label_visibility="visible")
+user_text = st.text_area("Please Enter your Text for analysis", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Type Something...", disabled=False, label_visibility="visible")
 
 if st.button("Submit"):
     if user_text.strip() == "":
         st.warning("Please enter some text before submitting.")
     else:
         st.success("Text submitted successfully!")
-
         result = prediction(user_text)
         explainer(user_text)
 
+st.write("")
+st.write("")
 # upload a file
 user_file = st.file_uploader("Please upload you Email .txt file here", type="txt", key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
 
@@ -114,6 +115,5 @@ if user_file is None:
 else:
     file_data = user_file.read().decode("utf-8")
     st.success("File submitted successfully!")
-
     result = prediction(file_data)
     explainer(file_data)
