@@ -1,0 +1,15 @@
+pandas
+numpy 
+sklearn
+CountVectorizer
+TfidfVectorizer
+RandomForestClassifier
+train_test_split
+classification_report, accuracy_score
+BeautifulSoup
+urllib.parse
+streamlit 
+joblib
+LimeTextExplainer
+re
+pandas
