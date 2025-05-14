@@ -94,7 +94,7 @@ st.write("")
 st.write("")
 
 # text box
-user_text = st.text_area("Please Enter your Text for analysis", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Type Something...", disabled=False, label_visibility="visible")
+user_text = st.text_area("Please Enter your Text for analysis.", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Type Something...", disabled=False, label_visibility="visible")
 
 if st.button("Submit"):
     if user_text.strip() == "":
@@ -107,7 +107,7 @@ if st.button("Submit"):
 st.write("")
 st.write("")
 # upload a file
-user_file = st.file_uploader("Please upload you Email .txt file here", type="txt", key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
+user_file = st.file_uploader("Please upload you .txt file for analysis.", type="txt", key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
 
 if user_file is None:
     st.warning("Please upload a file to analyse.")
