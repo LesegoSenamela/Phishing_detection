@@ -15,7 +15,6 @@ import re
 from bs4 import BeautifulSoup
 import urllib.parse
 
-
 # Feature Extraction Functions
 def extract_features(email_text):
     features = {}
