@@ -88,7 +88,11 @@ vectorizer = joblib.load('tfidf_content.pkl')
 
 st.title('EmailPhish')
 st.write("This is an AI-Powered Phishing Email Detection System.")
-st.write("The aim of this system is to detect legitimate emails and phishing attacks. You know when you win an iPhone 13 but you didn't enter for any competition or they send you a notification that you have an unclamed package at the Post Office and to pay a certain ammount. \nThis system aims to help you distunguish between the two.\n\n")
+st.write("")
+st.write("The aim of this system is to detect legitimate emails and phishing attacks. You know when you win an iPhone 13 but you didn't enter for any competition or they send you a notification that you have an unclamed package at the Post Office and to pay a certain ammount. This system aims to help you distunguish between the two.")
+st.write("")
+st.write("")
+
 # text box
 user_text = st.text_area("Please Enter your Email Text here", value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Type Something...", disabled=False, label_visibility="visible")
 
