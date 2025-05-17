@@ -103,6 +103,8 @@ if st.button("Submit"):
         st.success("Text submitted successfully!")
         result = prediction(user_text)
         explainer(user_text)
+        st.write(f"Based on Model's predictions the **Confidence Score** that this is an attempt is: `{result[0]*100:.2f}%`")
+
 
 st.write("")
 st.write("")
@@ -117,3 +119,5 @@ else:
     st.success("File submitted successfully!")
     result = prediction(file_data)
     explainer(file_data)
+    st.write(f"Based on Model's predictions the **Confidence Score** that this is an attempt is: `{result[0]*100:.2f}%`")
+
